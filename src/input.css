@@ -7,6 +7,8 @@ body {
     background-repeat: no-repeat;
     background-size: 800px;
     background-position: 90% -25%;
+    scroll-snap-type: y mandatory;
+	position: relative;
 }
 
 @media (max-width: 576px){
@@ -61,4 +63,36 @@ body {
 
 .open .hamburger-bot {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.scroller {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-padding: 0px;
+}
+
+.scroller section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    height: 100vh;
+    margin: auto;
+}
+
+footer {
+	scroll-snap-stop: always;
+	scroll-snap-align: end;
+	position: relative;
+	height: 20vh;
+	width: 100%;
+}
+
+nav {
+	scroll-snap-stop: always;
+	scroll-snap-align: start;
+	position: relative;
+	height: 20vh;
+	width: 100%;
 }
