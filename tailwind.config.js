@@ -10,15 +10,13 @@ module.exports = {
     },
     extend: {
       colors: {
-        darkpurple: 'hsl(294, 84%, 7%)',
-        mardigras: 'hsl(308, 66%, 33%)',
-        cerise: 'hsl(345, 67%, 55%)',
-        cameopink: 'hsl(332, 63%, 84%)',
-        artichoke: 'hsl(92, 16%, 54%)',
         gold: 'hsl(24, 59%, 49%)',
         lightgold: 'hsl(29, 68%, 70%)',
         darkgray: 'hsl(0, 0%, 30%)',
         lightgray: 'hsl(0, 0%, 90%)',
+        skyblue: 'hsl(205, 64%, 70%)',
+        babyblue:  'hsl(197, 70%, 79%)',
+        blue: 'hsl(205, 73%, 47%)',
       }
     },
   },
