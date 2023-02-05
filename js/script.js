@@ -7,10 +7,14 @@ btn.addEventListener('click', () => {
     nav.classList.toggle('hidden')
 });
 
-ScrollReveal({
-    reset: true,
-    duration: 1000,
-    scale: 1.25,
-});
+document.addEventListener("mousemove", parallax);
+function parallax(e){
+    document.querySelectorAll(".object").forEach(function(move){
+        var moving_value = move.getAttribute("data-value");
+        var x = e.clientX * moving_value /50;
+        var y = e.clientY * moving_value /50;
 
-ScrollReveal().reveal('.headline', {container: "#feature", delay: 200});
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+        
+    });
+}

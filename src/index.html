@@ -24,10 +24,11 @@
           <!-- Menu -->
           <a href="#" id="nav-btn" class="hover:text-blue">Home</a>
           <a href="#" id="nav-btn" class="hover:text-blue">About</a>
-          <a href="#" id="nav-btn" class="hover:text-blue">Articles</a>
+          <a href="#boxes" id="nav-btn" class="hover:text-blue">Resources</a>
+          <a href="#" id="nav-btn" class="hover:text-blue">Contact</a>
 
           <!-- Button -->
-          <a href="#" id="cfa-btn" class="hidden md:block p-2 px-3 pt-1">Contact</a>
+          <a href="#" id="cta-btn" class="hidden md:block p-2 px-3 pt-1">Buy me Coffee</a>
         </div>
 
         <!-- Hamburger Icon -->
@@ -43,7 +44,7 @@
         <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
           <a href="#">Home</a>
           <a href="#">About</a>
-          <a href="#">Articles</a>
+          <a href="#">Resources</a>
           <a href="#">Contact</a>
         </div>
       </div>
@@ -53,22 +54,32 @@
     <!-- Main Page -->
     <section id="main">
       <!-- Flex Container -->
-      <div class="container flex flex-col-reverse md:flex-row justify-between px-6 mx-auto space-y-0 md:space-y-0">
+      <div class="container flex flex-col-reverse md:flex-row justify-between mx-auto">
+        
         <!-- Left Items -->
-        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
-          <h1 class="max-w-sm text-4xl font-bold text-center md:text-5xl md:text-left">
-            Some tagline here.
+        <div class="flex flex-col mx-auto md:w-1/2">
+          <h1 class="text-4xl mb-10 font-bold text-center mt-5 md:mt-15 md:text-5xl md:text-left">
+            This is my first live website.
           </h1>
-          <p class="max-w-sm text-center text-darkgray md:text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <p class="hidden md:block max-w-sm text-center text-darkgray md:text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           </p>
-          <div class="flex justify-center md:justify-start">
-            <a href="#" id="cfa-btn" class="p-2 px-4 pt-1">Buy me Coffee</a>
+          <div class="start-btn flex mx-auto md:mx-0 mt-0 md:mt-12 justify-center">
+            <a href="#feature" class="p-2 px-4 pt-1">GET STARTED</a>
           </div>
+          <div class="arrow mx-auto md:mx-0 justify-center">
+            <span class="arrow-left"></span>
+            <span class="arrow-right"></span>
+          </div>  
         </div>
+
         <!-- Right Items -->
-        <div class="md:w-1/2 items-top">
-          <img src="/img/start.png" width='500px' alt="">
+        <div class="md:w-1/2 mx-auto relative">
+          <img src="/img/start-dummy.png" class="object z-1" data-value="-2" alt="">
+          <p style="font-size:150px " class="object z-2 absolute top-2 right-8" data-value="-4" >&#128054;</p>
+          <p style="font-size:150px " class="object z-3 absolute top-0 left-7" data-value="-6" >&#128076;</p>
+          <p style="font-size:150px " class="object z-5 absolute bottom-12 left-9" data-value="3" >&#128187;</p>
+          <p style="font-size:150px " class="object z-4 absolute bottom-3 right-6" data-value="1" >&#128515;</p>
         </div>
       </div>
     </section>
@@ -77,7 +88,7 @@
     <section id="feature" class="bg-skyblue">
       <div class="flex flex-col">
         <h2 class="headline text-4xl font-bold text-center max-w-sm" >
-          FINANCES
+          INTRO SOMETHING
         </h2>
         <p class="max-w-sm text-center mt-12 text-darkgray">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -88,7 +99,7 @@
     <section id="feature">
       <div class="flex flex-col">
         <h2 class="text-4xl font-bold text-center max-w-sm" >
-          HEALTH
+          FINANCES
         </h2>
         <p class="max-w-sm text-center mt-12 text-darkgray">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -97,6 +108,17 @@
     </section>
 
     <section id="feature" class="bg-skyblue">
+      <div class="flex flex-col">
+        <h2 class="text-4xl font-bold text-center max-w-sm" >
+          HEALTH
+        </h2>
+        <p class="max-w-sm text-center mt-12 text-darkgray">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </section>
+
+    <section id="feature">
       <div class="flex flex-col">
         <h2 class="text-4xl font-bold text-center max-w-sm" >
           BOOKS
@@ -108,18 +130,18 @@
     </section>
 
     <!-- Three-column Boxes -->
-    <section id="boxes">
+    <section id="boxes" class="bg-skyblue">
       <div class="max-w-6xl px-12 mx-auto text-center">
         <!-- Title -->
         <h2 class="text-4xl font-bold text-center">
           Tools & Resources
         </h2>
         
-        <div class="flex flex-col mt-5 md:mt-36 md:flex-row md:space-x-6">
+        <div class="flex flex-col mt-5 md:mt-12 md:flex-row md:space-x-6">
           <!-- Box #1 -->
           <div id="box" class="flex flex-col items-center p-6 space-y-3 rounded-lg bg-lightgray mt-8 md:w-1/3">
-            <p class="w-16 -mt-14" style="font-size:48px">&#128184;</p>
-            <h5 class="text-lg font-bold">
+            <p class="-mt-16" style="font-size:72px">&#128184;</p>
+            <h5 class="text-xl font-bold">
               FINANCES
             </h5>
             <p class="text-sm text-darkgray">
@@ -129,8 +151,8 @@
   
           <!-- Box #2 -->
           <div id="box" class="flex flex-col items-center p-6 space-y-3 rounded-lg bg-lightgray mt-8 md:w-1/3">
-            <p class="w-16 -mt-14" style="font-size:48px">&#128170;</p>
-            <h5 class="text-lg font-bold">
+            <p class="-mt-16" style="font-size:72px">&#128170;</p>
+            <h5 class="text-xl font-bold">
               HEALTH
             </h5>
             <p class="text-sm text-darkgray">
@@ -140,8 +162,8 @@
   
           <!-- Box #3 -->
           <div id="box" class="flex flex-col items-center p-6 space-y-3 rounded-lg bg-lightgray mt-8 md:w-1/3">
-            <p class="w-16 -mt-14" style="font-size:48px">&#128214;</p>
-            <h5 class="text-lg font-bold">
+            <p class="-mt-16" style="font-size:72px">&#128214;</p>
+            <h5 class="text-xl font-bold">
               BOOKS
             </h5>
             <p class="text-sm text-darkgray">
@@ -155,35 +177,42 @@
 
     <!-- Footer -->
     <footer class="bg-darkgray mx-auto">
-      <div class="container items-center flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
-        <!-- Logo -->
-        <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
-          
-          
-          <img src="/img/logo-light.svg" width='50px' alt="">
-          <p class="mt-6 md:mt-0 text-white font-bold text-md">
-              © Belle Sermeno 2023
-          </p>
-        </div>
-        
-        <!-- Social Media Icons -->
-        <div class="flex justify-around space-x-6">
-          <a href="#">
-            <img src="/img/instagram-light.svg" width='35px' alt="">
-          </a>
-          <a href="#">
-            <img src="/img/github-light.svg" width='35px' alt="">
-          </a>
-          <a href="#">
-            <img src="/img/linkedin-light.svg" width='35px' alt="">
-          </a>
-        </div>
+      <!-- Waves -->
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+
+      <!-- Logo -->
+      <div class="container items-center flex flex-col-reverse justify-between px-6 mx-auto space-y-8 md:flex-row md:space-y-0">
+      <div class="flex flex-col items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+        <img src="/img/logo-light.svg" width='50px' alt="">
+        <p class="hidden md:flex text-white font-bold text-md">
+          © Belle Sermeno 2023
+        </p>
+      </div>
+      
+      <!-- Social Media Icons -->
+      <div class="socmed flex justify-around space-x-6">
+        <a href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
 
       </div>
     </footer>
   </article>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="/js/script.js"></script>
 
 </body>
